@@ -1,25 +1,321 @@
-2024-10-01T22:35:51.562+05:30  INFO 56368 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : Starting MinorProjectApplication using Java 21.0.2 with PID 56368 (C:\Users\dharun\Downloads\Minor_Project\Minor_Project\target\classes started by dharun in C:\Users\dharun\Downloads\Minor_Project\Minor_Project)
-2024-10-01T22:35:51.576+05:30  INFO 56368 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : No active profile set, falling back to 1 default profile: "default"
-2024-10-01T22:35:52.953+05:30  INFO 56368 --- [Minor_Project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-10-01T22:35:53.108+05:30  INFO 56368 --- [Minor_Project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 141 ms. Found 4 JPA repository interfaces.
-2024-10-01T22:35:54.272+05:30  INFO 56368 --- [Minor_Project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-10-01T22:35:54.287+05:30  INFO 56368 --- [Minor_Project] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-10-01T22:35:54.288+05:30  INFO 56368 --- [Minor_Project] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-10-01T22:35:54.366+05:30  INFO 56368 --- [Minor_Project] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-10-01T22:35:54.366+05:30  INFO 56368 --- [Minor_Project] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2713 ms
-2024-10-01T22:35:54.813+05:30  INFO 56368 --- [Minor_Project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-01T22:35:54.911+05:30  INFO 56368 --- [Minor_Project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-10-01T22:35:54.965+05:30  INFO 56368 --- [Minor_Project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-10-01T22:35:55.387+05:30  INFO 56368 --- [Minor_Project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-10-01T22:35:55.423+05:30  INFO 56368 --- [Minor_Project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-10-01T22:35:55.863+05:30  INFO 56368 --- [Minor_Project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a122e68
-2024-10-01T22:35:55.865+05:30  INFO 56368 --- [Minor_Project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-10-01T22:35:56.992+05:30  INFO 56368 --- [Minor_Project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-10-01T22:35:57.125+05:30  INFO 56368 --- [Minor_Project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-10-01T22:35:57.619+05:30  INFO 56368 --- [Minor_Project] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-10-01T22:35:58.019+05:30  WARN 56368 --- [Minor_Project] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-10-01T22:35:58.834+05:30  INFO 56368 --- [Minor_Project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-10-01T22:35:58.855+05:30  INFO 56368 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : Started MinorProjectApplication in 7.937 seconds (process running for 8.617)
-2024-10-01T23:50:03.857+05:30  INFO 56368 --- [Minor_Project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-10-01T23:50:03.869+05:30  INFO 56368 --- [Minor_Project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-10-01T23:50:03.875+05:30  INFO 56368 --- [Minor_Project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-25T01:17:04.686+05:30  INFO 123408 --- [Minor_Project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T01:17:04.752+05:30  INFO 123408 --- [Minor_Project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-25T01:17:04.771+05:30  INFO 123408 --- [Minor_Project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-25T18:32:06.283+05:30  INFO 115268 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : Starting MinorProjectApplication using Java 21.0.2 with PID 115268 (C:\Users\dharun\Downloads\Minor_Project\Minor_Project\target\classes started by dharun in C:\Users\dharun\Downloads\Minor_Project\Minor_Project)
+2024-09-25T18:32:06.286+05:30  INFO 115268 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-09-25T18:32:07.152+05:30  INFO 115268 --- [Minor_Project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-25T18:32:07.259+05:30  INFO 115268 --- [Minor_Project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94 ms. Found 4 JPA repository interfaces.
+2024-09-25T18:32:07.977+05:30  INFO 115268 --- [Minor_Project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-25T18:32:07.992+05:30  INFO 115268 --- [Minor_Project] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-25T18:32:07.992+05:30  INFO 115268 --- [Minor_Project] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-25T18:32:08.057+05:30  INFO 115268 --- [Minor_Project] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-25T18:32:08.057+05:30  INFO 115268 --- [Minor_Project] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1707 ms
+2024-09-25T18:32:08.404+05:30  INFO 115268 --- [Minor_Project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-25T18:32:08.501+05:30  INFO 115268 --- [Minor_Project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-25T18:32:08.535+05:30  INFO 115268 --- [Minor_Project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-25T18:32:08.920+05:30  INFO 115268 --- [Minor_Project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-25T18:32:08.949+05:30  INFO 115268 --- [Minor_Project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-25T18:32:09.311+05:30  INFO 115268 --- [Minor_Project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@efe49ab
+2024-09-25T18:32:09.313+05:30  INFO 115268 --- [Minor_Project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-25T18:32:10.276+05:30  INFO 115268 --- [Minor_Project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-25T18:32:10.343+05:30  INFO 115268 --- [Minor_Project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T18:32:10.816+05:30  INFO 115268 --- [Minor_Project] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-25T18:32:10.989+05:30  WARN 115268 --- [Minor_Project] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-25T18:32:11.671+05:30  INFO 115268 --- [Minor_Project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-25T18:32:11.689+05:30  INFO 115268 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : Started MinorProjectApplication in 5.927 seconds (process running for 6.461)
+2024-09-25T18:40:38.523+05:30  INFO 115268 --- [Minor_Project] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-25T18:40:38.524+05:30  INFO 115268 --- [Minor_Project] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-25T18:40:38.525+05:30  INFO 115268 --- [Minor_Project] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-25T18:40:38.841+05:30  WARN 115268 --- [Minor_Project] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-09-25T18:40:38.842+05:30  WARN 115268 --- [Minor_Project] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-09-25T18:41:22.023+05:30  INFO 115268 --- [Minor_Project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T18:41:22.025+05:30  INFO 115268 --- [Minor_Project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-25T18:41:22.033+05:30  INFO 115268 --- [Minor_Project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-25T18:41:27.886+05:30  INFO 108080 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : Starting MinorProjectApplication using Java 21.0.2 with PID 108080 (C:\Users\dharun\Downloads\Minor_Project\Minor_Project\target\classes started by dharun in C:\Users\dharun\Downloads\Minor_Project\Minor_Project)
+2024-09-25T18:41:27.889+05:30  INFO 108080 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-09-25T18:41:28.930+05:30  INFO 108080 --- [Minor_Project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-25T18:41:29.051+05:30  INFO 108080 --- [Minor_Project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107 ms. Found 4 JPA repository interfaces.
+2024-09-25T18:41:29.961+05:30  INFO 108080 --- [Minor_Project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-25T18:41:29.994+05:30  INFO 108080 --- [Minor_Project] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-25T18:41:29.995+05:30  INFO 108080 --- [Minor_Project] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-25T18:41:30.108+05:30  INFO 108080 --- [Minor_Project] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-25T18:41:30.110+05:30  INFO 108080 --- [Minor_Project] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2148 ms
+2024-09-25T18:41:30.455+05:30  INFO 108080 --- [Minor_Project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-25T18:41:30.559+05:30  INFO 108080 --- [Minor_Project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-25T18:41:30.599+05:30  INFO 108080 --- [Minor_Project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-25T18:41:31.073+05:30  INFO 108080 --- [Minor_Project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-25T18:41:31.107+05:30  INFO 108080 --- [Minor_Project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-25T18:41:31.557+05:30  INFO 108080 --- [Minor_Project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6dcf7b6a
+2024-09-25T18:41:31.559+05:30  INFO 108080 --- [Minor_Project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-25T18:41:32.776+05:30  INFO 108080 --- [Minor_Project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-25T18:41:32.888+05:30  INFO 108080 --- [Minor_Project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T18:41:33.339+05:30  INFO 108080 --- [Minor_Project] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-25T18:41:33.550+05:30  WARN 108080 --- [Minor_Project] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-25T18:41:34.064+05:30  INFO 108080 --- [Minor_Project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-25T18:41:34.075+05:30  INFO 108080 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : Started MinorProjectApplication in 6.823 seconds (process running for 7.412)
+2024-09-25T18:41:51.101+05:30  INFO 108080 --- [Minor_Project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T18:41:51.105+05:30  INFO 108080 --- [Minor_Project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-25T18:41:51.119+05:30  INFO 108080 --- [Minor_Project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-25T18:41:55.061+05:30  INFO 138608 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : Starting MinorProjectApplication using Java 21.0.2 with PID 138608 (C:\Users\dharun\Downloads\Minor_Project\Minor_Project\target\classes started by dharun in C:\Users\dharun\Downloads\Minor_Project\Minor_Project)
+2024-09-25T18:41:55.064+05:30  INFO 138608 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-09-25T18:41:55.895+05:30  INFO 138608 --- [Minor_Project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-25T18:41:56.013+05:30  INFO 138608 --- [Minor_Project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 101 ms. Found 4 JPA repository interfaces.
+2024-09-25T18:41:56.746+05:30  INFO 138608 --- [Minor_Project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-25T18:41:56.763+05:30  INFO 138608 --- [Minor_Project] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-25T18:41:56.764+05:30  INFO 138608 --- [Minor_Project] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-25T18:41:56.832+05:30  INFO 138608 --- [Minor_Project] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-25T18:41:56.832+05:30  INFO 138608 --- [Minor_Project] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1710 ms
+2024-09-25T18:41:57.158+05:30  INFO 138608 --- [Minor_Project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-25T18:41:57.314+05:30  INFO 138608 --- [Minor_Project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-25T18:41:57.348+05:30  INFO 138608 --- [Minor_Project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-25T18:41:57.671+05:30  INFO 138608 --- [Minor_Project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-25T18:41:57.711+05:30  INFO 138608 --- [Minor_Project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-25T18:41:58.024+05:30  INFO 138608 --- [Minor_Project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@79d4ff58
+2024-09-25T18:41:58.026+05:30  INFO 138608 --- [Minor_Project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-25T18:41:59.031+05:30  INFO 138608 --- [Minor_Project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-25T18:41:59.115+05:30  INFO 138608 --- [Minor_Project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T18:41:59.753+05:30  INFO 138608 --- [Minor_Project] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-25T18:41:59.956+05:30  WARN 138608 --- [Minor_Project] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-25T18:42:00.512+05:30  INFO 138608 --- [Minor_Project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-25T18:42:00.523+05:30  INFO 138608 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : Started MinorProjectApplication in 5.977 seconds (process running for 6.444)
+2024-09-25T18:42:13.406+05:30  INFO 138608 --- [Minor_Project] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-25T18:42:13.407+05:30  INFO 138608 --- [Minor_Project] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-25T18:42:13.411+05:30  INFO 138608 --- [Minor_Project] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-09-25T18:42:14.324+05:30  WARN 138608 --- [Minor_Project] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2024-09-25T18:42:14.325+05:30  WARN 138608 --- [Minor_Project] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2024-09-25T18:42:54.019+05:30  INFO 138608 --- [Minor_Project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T18:42:54.020+05:30  INFO 138608 --- [Minor_Project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-25T18:42:54.030+05:30  INFO 138608 --- [Minor_Project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-25T18:42:58.439+05:30  INFO 142744 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : Starting MinorProjectApplication using Java 21.0.2 with PID 142744 (C:\Users\dharun\Downloads\Minor_Project\Minor_Project\target\classes started by dharun in C:\Users\dharun\Downloads\Minor_Project\Minor_Project)
+2024-09-25T18:42:58.442+05:30  INFO 142744 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-09-25T18:42:59.370+05:30  INFO 142744 --- [Minor_Project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-25T18:42:59.467+05:30  INFO 142744 --- [Minor_Project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 4 JPA repository interfaces.
+2024-09-25T18:43:00.274+05:30  INFO 142744 --- [Minor_Project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-25T18:43:00.292+05:30  INFO 142744 --- [Minor_Project] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-25T18:43:00.292+05:30  INFO 142744 --- [Minor_Project] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-25T18:43:00.367+05:30  INFO 142744 --- [Minor_Project] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-25T18:43:00.367+05:30  INFO 142744 --- [Minor_Project] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1847 ms
+2024-09-25T18:43:00.641+05:30  INFO 142744 --- [Minor_Project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-25T18:43:00.709+05:30  INFO 142744 --- [Minor_Project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-25T18:43:00.739+05:30  INFO 142744 --- [Minor_Project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-25T18:43:01.119+05:30  INFO 142744 --- [Minor_Project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-25T18:43:01.145+05:30  INFO 142744 --- [Minor_Project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-25T18:43:01.448+05:30  INFO 142744 --- [Minor_Project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7adae08e
+2024-09-25T18:43:01.449+05:30  INFO 142744 --- [Minor_Project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-25T18:43:02.415+05:30  INFO 142744 --- [Minor_Project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-25T18:43:02.478+05:30  INFO 142744 --- [Minor_Project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T18:43:02.931+05:30  INFO 142744 --- [Minor_Project] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-25T18:43:03.103+05:30  WARN 142744 --- [Minor_Project] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-25T18:43:03.582+05:30  INFO 142744 --- [Minor_Project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-25T18:43:03.592+05:30  INFO 142744 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : Started MinorProjectApplication in 5.705 seconds (process running for 6.173)
+2024-09-25T18:44:27.968+05:30  INFO 142744 --- [Minor_Project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T18:44:27.972+05:30  INFO 142744 --- [Minor_Project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-25T18:44:27.992+05:30  INFO 142744 --- [Minor_Project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-25T18:44:32.544+05:30  INFO 125152 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : Starting MinorProjectApplication using Java 21.0.2 with PID 125152 (C:\Users\dharun\Downloads\Minor_Project\Minor_Project\target\classes started by dharun in C:\Users\dharun\Downloads\Minor_Project\Minor_Project)
+2024-09-25T18:44:32.546+05:30  INFO 125152 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-09-25T18:44:33.469+05:30  INFO 125152 --- [Minor_Project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-25T18:44:33.559+05:30  INFO 125152 --- [Minor_Project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 4 JPA repository interfaces.
+2024-09-25T18:44:34.299+05:30  INFO 125152 --- [Minor_Project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-25T18:44:34.314+05:30  INFO 125152 --- [Minor_Project] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-25T18:44:34.314+05:30  INFO 125152 --- [Minor_Project] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-25T18:44:34.376+05:30  INFO 125152 --- [Minor_Project] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-25T18:44:34.377+05:30  INFO 125152 --- [Minor_Project] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1774 ms
+2024-09-25T18:44:34.749+05:30  INFO 125152 --- [Minor_Project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-25T18:44:34.948+05:30  INFO 125152 --- [Minor_Project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-25T18:44:34.991+05:30  INFO 125152 --- [Minor_Project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-25T18:44:35.375+05:30  INFO 125152 --- [Minor_Project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-25T18:44:35.432+05:30  INFO 125152 --- [Minor_Project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-25T18:44:35.797+05:30  INFO 125152 --- [Minor_Project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6dcf7b6a
+2024-09-25T18:44:35.800+05:30  INFO 125152 --- [Minor_Project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-25T18:44:36.868+05:30  INFO 125152 --- [Minor_Project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-25T18:44:36.940+05:30  INFO 125152 --- [Minor_Project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T18:44:37.523+05:30  INFO 125152 --- [Minor_Project] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-25T18:44:37.719+05:30  WARN 125152 --- [Minor_Project] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-25T18:44:38.241+05:30  INFO 125152 --- [Minor_Project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-25T18:44:38.255+05:30  INFO 125152 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : Started MinorProjectApplication in 6.244 seconds (process running for 6.702)
+2024-09-25T18:44:38.681+05:30  INFO 125152 --- [Minor_Project] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-25T18:44:38.681+05:30  INFO 125152 --- [Minor_Project] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-25T18:44:38.682+05:30  INFO 125152 --- [Minor_Project] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-25T18:50:15.738+05:30  WARN 125152 --- [Minor_Project] [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'com.example.Minor_Project.enums.BookType'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam com.example.Minor_Project.enums.BookType] for value [english]]
+2024-09-25T18:50:59.597+05:30  WARN 125152 --- [Minor_Project] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'com.example.Minor_Project.enums.BookType'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam com.example.Minor_Project.enums.BookType] for value [english]]
+2024-09-25T18:51:12.443+05:30  WARN 125152 --- [Minor_Project] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'com.example.Minor_Project.enums.BookType'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam com.example.Minor_Project.enums.BookType] for value [enGliSh]]
+2024-09-25T18:51:20.658+05:30  WARN 125152 --- [Minor_Project] [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'com.example.Minor_Project.enums.BookType'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam com.example.Minor_Project.enums.BookType] for value [English]]
+2024-09-25T18:51:28.422+05:30  WARN 125152 --- [Minor_Project] [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'com.example.Minor_Project.enums.BookType'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam com.example.Minor_Project.enums.BookType] for value [ENGLIsh]]
+2024-09-25T20:11:26.246+05:30  INFO 125152 --- [Minor_Project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T20:11:26.263+05:30  INFO 125152 --- [Minor_Project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-25T20:11:26.271+05:30  INFO 125152 --- [Minor_Project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-25T20:11:30.658+05:30  INFO 138600 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : Starting MinorProjectApplication using Java 21.0.2 with PID 138600 (C:\Users\dharun\Downloads\Minor_Project\Minor_Project\target\classes started by dharun in C:\Users\dharun\Downloads\Minor_Project\Minor_Project)
+2024-09-25T20:11:30.663+05:30  INFO 138600 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-09-25T20:11:31.539+05:30  INFO 138600 --- [Minor_Project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-25T20:11:31.669+05:30  INFO 138600 --- [Minor_Project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 119 ms. Found 4 JPA repository interfaces.
+2024-09-25T20:11:32.834+05:30  INFO 138600 --- [Minor_Project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-25T20:11:32.858+05:30  INFO 138600 --- [Minor_Project] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-25T20:11:32.858+05:30  INFO 138600 --- [Minor_Project] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-25T20:11:33.003+05:30  INFO 138600 --- [Minor_Project] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-25T20:11:33.004+05:30  INFO 138600 --- [Minor_Project] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2279 ms
+2024-09-25T20:11:33.332+05:30  INFO 138600 --- [Minor_Project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-25T20:11:33.414+05:30  INFO 138600 --- [Minor_Project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-25T20:11:33.469+05:30  INFO 138600 --- [Minor_Project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-25T20:11:33.869+05:30  INFO 138600 --- [Minor_Project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-25T20:11:33.899+05:30  INFO 138600 --- [Minor_Project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-25T20:11:34.282+05:30  INFO 138600 --- [Minor_Project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6abb7b7d
+2024-09-25T20:11:34.285+05:30  INFO 138600 --- [Minor_Project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-25T20:11:35.478+05:30  INFO 138600 --- [Minor_Project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-25T20:11:35.567+05:30  INFO 138600 --- [Minor_Project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T20:11:35.901+05:30  INFO 138600 --- [Minor_Project] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-25T20:11:36.205+05:30  WARN 138600 --- [Minor_Project] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-25T20:11:36.802+05:30  INFO 138600 --- [Minor_Project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-25T20:11:36.822+05:30  INFO 138600 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : Started MinorProjectApplication in 6.788 seconds (process running for 7.254)
+2024-09-25T20:11:41.183+05:30  INFO 138600 --- [Minor_Project] [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-25T20:11:41.184+05:30  INFO 138600 --- [Minor_Project] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-25T20:11:41.185+05:30  INFO 138600 --- [Minor_Project] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-25T20:11:41.234+05:30  INFO 138600 --- [Minor_Project] [http-nio-8080-exec-4] com.example.Minor_Project.CustomAspect   : I am in emit logs before : ResponseEntity com.example.Minor_Project.controller.BookController.getBooks(String,BookType)
+2024-09-25T20:11:41.234+05:30  INFO 138600 --- [Minor_Project] [http-nio-8080-exec-4] c.e.M.controller.BookController          : In bookController and in getBooks method
+2024-09-25T20:11:41.397+05:30  INFO 138600 --- [Minor_Project] [http-nio-8080-exec-4] com.example.Minor_Project.CustomAspect   : I am in emit logs after : ResponseEntity com.example.Minor_Project.controller.BookController.getBooks(String,BookType)
+2024-09-25T21:29:13.137+05:30  WARN 138600 --- [Minor_Project] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h12m8s829ms80µs800ns).
+2024-09-25T22:24:02.389+05:30  INFO 138600 --- [Minor_Project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T22:24:02.424+05:30  INFO 138600 --- [Minor_Project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-25T22:24:02.436+05:30  INFO 138600 --- [Minor_Project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-25T22:24:05.848+05:30  INFO 154532 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : Starting MinorProjectApplication using Java 21.0.2 with PID 154532 (C:\Users\dharun\Downloads\Minor_Project\Minor_Project\target\classes started by dharun in C:\Users\dharun\Downloads\Minor_Project\Minor_Project)
+2024-09-25T22:24:05.850+05:30  INFO 154532 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-09-25T22:24:06.577+05:30  INFO 154532 --- [Minor_Project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-25T22:24:06.667+05:30  INFO 154532 --- [Minor_Project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 4 JPA repository interfaces.
+2024-09-25T22:24:07.392+05:30  INFO 154532 --- [Minor_Project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-25T22:24:07.417+05:30  INFO 154532 --- [Minor_Project] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-25T22:24:07.417+05:30  INFO 154532 --- [Minor_Project] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-25T22:24:07.502+05:30  INFO 154532 --- [Minor_Project] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-25T22:24:07.503+05:30  INFO 154532 --- [Minor_Project] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1597 ms
+2024-09-25T22:24:07.685+05:30  INFO 154532 --- [Minor_Project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-25T22:24:07.739+05:30  INFO 154532 --- [Minor_Project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-25T22:24:07.776+05:30  INFO 154532 --- [Minor_Project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-25T22:24:08.048+05:30  INFO 154532 --- [Minor_Project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-25T22:24:08.072+05:30  INFO 154532 --- [Minor_Project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-25T22:24:08.361+05:30  INFO 154532 --- [Minor_Project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6fbe4800
+2024-09-25T22:24:08.363+05:30  INFO 154532 --- [Minor_Project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-25T22:24:09.225+05:30  INFO 154532 --- [Minor_Project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-25T22:24:09.289+05:30  INFO 154532 --- [Minor_Project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T22:24:09.545+05:30  INFO 154532 --- [Minor_Project] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-25T22:24:09.775+05:30  WARN 154532 --- [Minor_Project] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-25T22:24:10.160+05:30  INFO 154532 --- [Minor_Project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-25T22:24:10.167+05:30  INFO 154532 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : Started MinorProjectApplication in 4.759 seconds (process running for 5.108)
+2024-09-25T22:25:25.494+05:30  INFO 154532 --- [Minor_Project] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-25T22:25:25.494+05:30  INFO 154532 --- [Minor_Project] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-25T22:25:25.496+05:30  INFO 154532 --- [Minor_Project] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-09-25T22:25:25.547+05:30  INFO 154532 --- [Minor_Project] [http-nio-8080-exec-1] com.example.Minor_Project.CustomAspect   : I am in emit logs before : ResponseEntity com.example.Minor_Project.controller.BookController.getBooks(String,BookType)
+2024-09-25T22:25:25.547+05:30  INFO 154532 --- [Minor_Project] [http-nio-8080-exec-1] c.e.M.controller.BookController          : In bookController and in getBooks method
+2024-09-25T22:25:25.547+05:30  INFO 154532 --- [Minor_Project] [http-nio-8080-exec-1] com.example.Minor_Project.CustomAspect   : I am in emit logs before : List com.example.Minor_Project.service.BookService.getBooks(String,BookType)
+2024-09-25T22:25:25.547+05:30  INFO 154532 --- [Minor_Project] [http-nio-8080-exec-1] c.e.Minor_Project.service.BookService    : I am in bookService
+2024-09-25T22:25:25.695+05:30  INFO 154532 --- [Minor_Project] [http-nio-8080-exec-1] c.e.Minor_Project.service.BookService    : I am returning from bookService
+2024-09-25T22:25:25.695+05:30  INFO 154532 --- [Minor_Project] [http-nio-8080-exec-1] com.example.Minor_Project.CustomAspect   : I am in emit logs after : List com.example.Minor_Project.service.BookService.getBooks(String,BookType)
+2024-09-25T22:25:25.699+05:30  INFO 154532 --- [Minor_Project] [http-nio-8080-exec-1] com.example.Minor_Project.CustomAspect   : I am in emit logs after : ResponseEntity com.example.Minor_Project.controller.BookController.getBooks(String,BookType)
+2024-09-25T22:27:41.012+05:30  INFO 154532 --- [Minor_Project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T22:27:41.015+05:30  INFO 154532 --- [Minor_Project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-25T22:27:41.021+05:30  INFO 154532 --- [Minor_Project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-25T22:27:43.798+05:30  INFO 120608 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : Starting MinorProjectApplication using Java 21.0.2 with PID 120608 (C:\Users\dharun\Downloads\Minor_Project\Minor_Project\target\classes started by dharun in C:\Users\dharun\Downloads\Minor_Project\Minor_Project)
+2024-09-25T22:27:43.799+05:30  INFO 120608 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-09-25T22:27:44.434+05:30  INFO 120608 --- [Minor_Project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-25T22:27:44.504+05:30  INFO 120608 --- [Minor_Project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 4 JPA repository interfaces.
+2024-09-25T22:27:45.184+05:30  INFO 120608 --- [Minor_Project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-25T22:27:45.198+05:30  INFO 120608 --- [Minor_Project] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-25T22:27:45.198+05:30  INFO 120608 --- [Minor_Project] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-25T22:27:45.255+05:30  INFO 120608 --- [Minor_Project] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-25T22:27:45.255+05:30  INFO 120608 --- [Minor_Project] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1414 ms
+2024-09-25T22:27:45.418+05:30  INFO 120608 --- [Minor_Project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-25T22:27:45.476+05:30  INFO 120608 --- [Minor_Project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-25T22:27:45.528+05:30  INFO 120608 --- [Minor_Project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-25T22:27:45.813+05:30  INFO 120608 --- [Minor_Project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-25T22:27:45.833+05:30  INFO 120608 --- [Minor_Project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-25T22:27:46.086+05:30  INFO 120608 --- [Minor_Project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@71e7830a
+2024-09-25T22:27:46.088+05:30  INFO 120608 --- [Minor_Project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-25T22:27:46.901+05:30  INFO 120608 --- [Minor_Project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-25T22:27:46.967+05:30  INFO 120608 --- [Minor_Project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T22:27:47.237+05:30  INFO 120608 --- [Minor_Project] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-25T22:27:47.395+05:30  WARN 120608 --- [Minor_Project] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-25T22:27:47.700+05:30  INFO 120608 --- [Minor_Project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-25T22:27:47.710+05:30  INFO 120608 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : Started MinorProjectApplication in 4.309 seconds (process running for 4.682)
+2024-09-25T22:29:57.142+05:30  INFO 120608 --- [Minor_Project] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-25T22:29:57.142+05:30  INFO 120608 --- [Minor_Project] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-25T22:29:57.142+05:30  INFO 120608 --- [Minor_Project] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-09-25T22:29:57.178+05:30  INFO 120608 --- [Minor_Project] [http-nio-8080-exec-2] com.example.Minor_Project.CustomAspect   : I am in emit logs before : ResponseEntity com.example.Minor_Project.controller.BookController.getBooks(String,BookType)
+2024-09-25T22:29:57.179+05:30  INFO 120608 --- [Minor_Project] [http-nio-8080-exec-2] c.e.M.controller.BookController          : In bookController and in getBooks method
+2024-09-25T22:29:57.179+05:30  INFO 120608 --- [Minor_Project] [http-nio-8080-exec-2] com.example.Minor_Project.CustomAspect   : I am in emit logs before : List com.example.Minor_Project.service.BookService.getBooks(String,BookType)
+2024-09-25T22:29:57.179+05:30  INFO 120608 --- [Minor_Project] [http-nio-8080-exec-2] c.e.Minor_Project.service.BookService    : I am in bookService
+2024-09-25T22:29:57.307+05:30  INFO 120608 --- [Minor_Project] [http-nio-8080-exec-2] c.e.Minor_Project.service.BookService    : I am returning from bookService
+2024-09-25T22:29:57.307+05:30  INFO 120608 --- [Minor_Project] [http-nio-8080-exec-2] com.example.Minor_Project.CustomAspect   : Response : [FAILED toString()]
+2024-09-25T22:29:57.325+05:30  INFO 120608 --- [Minor_Project] [http-nio-8080-exec-2] com.example.Minor_Project.CustomAspect   : I am in emit logs after : List com.example.Minor_Project.service.BookService.getBooks(String,BookType)
+2024-09-25T22:29:57.329+05:30  INFO 120608 --- [Minor_Project] [http-nio-8080-exec-2] com.example.Minor_Project.CustomAspect   : I am in emit logs after : ResponseEntity com.example.Minor_Project.controller.BookController.getBooks(String,BookType)
+2024-09-25T22:38:27.231+05:30  INFO 120608 --- [Minor_Project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T22:38:27.233+05:30  INFO 120608 --- [Minor_Project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-25T22:38:27.239+05:30  INFO 120608 --- [Minor_Project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-25T22:45:56.699+05:30  INFO 105164 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : Starting MinorProjectApplication using Java 21.0.2 with PID 105164 (C:\Users\dharun\Downloads\Minor_Project\Minor_Project\target\classes started by dharun in C:\Users\dharun\Downloads\Minor_Project\Minor_Project)
+2024-09-25T22:45:56.701+05:30  INFO 105164 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-09-25T22:45:57.306+05:30  INFO 105164 --- [Minor_Project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-25T22:45:57.377+05:30  INFO 105164 --- [Minor_Project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 4 JPA repository interfaces.
+2024-09-25T22:45:57.989+05:30  INFO 105164 --- [Minor_Project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-25T22:45:58.003+05:30  INFO 105164 --- [Minor_Project] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-25T22:45:58.003+05:30  INFO 105164 --- [Minor_Project] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-25T22:45:58.052+05:30  INFO 105164 --- [Minor_Project] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-25T22:45:58.052+05:30  INFO 105164 --- [Minor_Project] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1306 ms
+2024-09-25T22:45:58.197+05:30  INFO 105164 --- [Minor_Project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-25T22:45:58.263+05:30  INFO 105164 --- [Minor_Project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-25T22:45:58.304+05:30  INFO 105164 --- [Minor_Project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-25T22:45:58.567+05:30  INFO 105164 --- [Minor_Project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-25T22:45:58.594+05:30  INFO 105164 --- [Minor_Project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-25T22:45:58.927+05:30  INFO 105164 --- [Minor_Project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e981e78
+2024-09-25T22:45:58.928+05:30  INFO 105164 --- [Minor_Project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-25T22:45:59.755+05:30  INFO 105164 --- [Minor_Project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-25T22:45:59.820+05:30  INFO 105164 --- [Minor_Project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T22:46:00.037+05:30  INFO 105164 --- [Minor_Project] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-25T22:46:00.230+05:30  WARN 105164 --- [Minor_Project] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-25T22:46:00.512+05:30  INFO 105164 --- [Minor_Project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-25T22:46:00.519+05:30  INFO 105164 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : Started MinorProjectApplication in 4.226 seconds (process running for 4.57)
+2024-09-25T22:46:04.254+05:30  INFO 105164 --- [Minor_Project] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-25T22:46:04.254+05:30  INFO 105164 --- [Minor_Project] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-25T22:46:04.256+05:30  INFO 105164 --- [Minor_Project] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-09-25T22:46:04.296+05:30  INFO 105164 --- [Minor_Project] [http-nio-8080-exec-1] com.example.Minor_Project.CustomAspect   : I am in emit logs before : ResponseEntity com.example.Minor_Project.controller.BookController.getBooks(String,BookType)
+2024-09-25T22:46:04.296+05:30  INFO 105164 --- [Minor_Project] [http-nio-8080-exec-1] c.e.M.controller.BookController          : In bookController and in getBooks method
+2024-09-25T22:46:04.297+05:30  INFO 105164 --- [Minor_Project] [http-nio-8080-exec-1] com.example.Minor_Project.CustomAspect   : I am in emit logs before : List com.example.Minor_Project.service.BookService.getBooks(String,BookType)
+2024-09-25T22:46:04.297+05:30  INFO 105164 --- [Minor_Project] [http-nio-8080-exec-1] c.e.Minor_Project.service.BookService    : I am in bookService
+2024-09-25T22:46:04.444+05:30  INFO 105164 --- [Minor_Project] [http-nio-8080-exec-1] c.e.Minor_Project.service.BookService    : I am returning from bookService
+2024-09-25T22:46:04.444+05:30  INFO 105164 --- [Minor_Project] [http-nio-8080-exec-1] com.example.Minor_Project.CustomAspect   : Response : [FAILED toString()]
+2024-09-25T22:46:04.459+05:30  INFO 105164 --- [Minor_Project] [http-nio-8080-exec-1] com.example.Minor_Project.CustomAspect   : I am in emit logs after : List com.example.Minor_Project.service.BookService.getBooks(String,BookType)
+2024-09-25T22:46:04.465+05:30  INFO 105164 --- [Minor_Project] [http-nio-8080-exec-1] com.example.Minor_Project.CustomAspect   : I am in emit logs after : ResponseEntity com.example.Minor_Project.controller.BookController.getBooks(String,BookType)
+2024-09-25T23:37:34.098+05:30  INFO 105164 --- [Minor_Project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T23:37:34.139+05:30  INFO 105164 --- [Minor_Project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-25T23:37:34.151+05:30  INFO 105164 --- [Minor_Project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-25T23:37:37.690+05:30  INFO 153500 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : Starting MinorProjectApplication using Java 21.0.2 with PID 153500 (C:\Users\dharun\Downloads\Minor_Project\Minor_Project\target\classes started by dharun in C:\Users\dharun\Downloads\Minor_Project\Minor_Project)
+2024-09-25T23:37:37.692+05:30  INFO 153500 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-09-25T23:37:38.258+05:30  INFO 153500 --- [Minor_Project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-25T23:37:38.349+05:30  INFO 153500 --- [Minor_Project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 4 JPA repository interfaces.
+2024-09-25T23:37:38.963+05:30  INFO 153500 --- [Minor_Project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-25T23:37:38.986+05:30  INFO 153500 --- [Minor_Project] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-25T23:37:38.986+05:30  INFO 153500 --- [Minor_Project] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-25T23:37:39.071+05:30  INFO 153500 --- [Minor_Project] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-25T23:37:39.071+05:30  INFO 153500 --- [Minor_Project] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1344 ms
+2024-09-25T23:37:39.300+05:30  INFO 153500 --- [Minor_Project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-25T23:37:39.357+05:30  INFO 153500 --- [Minor_Project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-25T23:37:39.394+05:30  INFO 153500 --- [Minor_Project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-25T23:37:39.678+05:30  INFO 153500 --- [Minor_Project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-25T23:37:39.700+05:30  INFO 153500 --- [Minor_Project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-25T23:37:39.986+05:30  INFO 153500 --- [Minor_Project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@a4df251
+2024-09-25T23:37:39.988+05:30  INFO 153500 --- [Minor_Project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-25T23:37:40.824+05:30  INFO 153500 --- [Minor_Project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-25T23:37:40.905+05:30  INFO 153500 --- [Minor_Project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T23:37:41.144+05:30  INFO 153500 --- [Minor_Project] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-25T23:37:41.308+05:30  WARN 153500 --- [Minor_Project] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-25T23:37:41.688+05:30  INFO 153500 --- [Minor_Project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-25T23:37:41.696+05:30  INFO 153500 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : Started MinorProjectApplication in 4.357 seconds (process running for 4.666)
+2024-09-25T23:37:45.522+05:30  INFO 153500 --- [Minor_Project] [http-nio-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-25T23:37:45.522+05:30  INFO 153500 --- [Minor_Project] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-25T23:37:45.524+05:30  INFO 153500 --- [Minor_Project] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-09-25T23:37:45.592+05:30  INFO 153500 --- [Minor_Project] [http-nio-8080-exec-5] com.example.Minor_Project.CustomAspect   : I am in emit logs before : ResponseEntity com.example.Minor_Project.controller.BookController.getBooks(String,BookType)
+2024-09-25T23:37:45.592+05:30  INFO 153500 --- [Minor_Project] [http-nio-8080-exec-5] c.e.M.controller.BookController          : In bookController and in getBooks method
+2024-09-25T23:37:45.592+05:30  INFO 153500 --- [Minor_Project] [http-nio-8080-exec-5] com.example.Minor_Project.CustomAspect   : I am in emit logs before : List com.example.Minor_Project.service.BookService.getBooks(String,BookType)
+2024-09-25T23:37:45.593+05:30  INFO 153500 --- [Minor_Project] [http-nio-8080-exec-5] c.e.Minor_Project.service.BookService    : I am in bookService
+2024-09-25T23:37:45.826+05:30  INFO 153500 --- [Minor_Project] [http-nio-8080-exec-5] c.e.Minor_Project.service.BookService    : I am returning from bookService
+2024-09-25T23:37:45.826+05:30  INFO 153500 --- [Minor_Project] [http-nio-8080-exec-5] com.example.Minor_Project.CustomAspect   : Response : [FAILED toString()]
+2024-09-25T23:37:45.857+05:30  INFO 153500 --- [Minor_Project] [http-nio-8080-exec-5] com.example.Minor_Project.CustomAspect   : I am in emit logs after : List com.example.Minor_Project.service.BookService.getBooks(String,BookType)
+2024-09-25T23:37:45.861+05:30  INFO 153500 --- [Minor_Project] [http-nio-8080-exec-5] com.example.Minor_Project.CustomAspect   : I am in emit logs after : ResponseEntity com.example.Minor_Project.controller.BookController.getBooks(String,BookType)
+2024-09-25T23:42:06.174+05:30  INFO 153500 --- [Minor_Project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T23:42:06.176+05:30  INFO 153500 --- [Minor_Project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-25T23:42:06.181+05:30  INFO 153500 --- [Minor_Project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
