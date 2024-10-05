@@ -1,0 +1,25 @@
+2024-10-01T22:35:51.562+05:30  INFO 56368 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : Starting MinorProjectApplication using Java 21.0.2 with PID 56368 (C:\Users\dharun\Downloads\Minor_Project\Minor_Project\target\classes started by dharun in C:\Users\dharun\Downloads\Minor_Project\Minor_Project)
+2024-10-01T22:35:51.576+05:30  INFO 56368 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-10-01T22:35:52.953+05:30  INFO 56368 --- [Minor_Project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-01T22:35:53.108+05:30  INFO 56368 --- [Minor_Project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 141 ms. Found 4 JPA repository interfaces.
+2024-10-01T22:35:54.272+05:30  INFO 56368 --- [Minor_Project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-10-01T22:35:54.287+05:30  INFO 56368 --- [Minor_Project] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-01T22:35:54.288+05:30  INFO 56368 --- [Minor_Project] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-10-01T22:35:54.366+05:30  INFO 56368 --- [Minor_Project] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-01T22:35:54.366+05:30  INFO 56368 --- [Minor_Project] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2713 ms
+2024-10-01T22:35:54.813+05:30  INFO 56368 --- [Minor_Project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-01T22:35:54.911+05:30  INFO 56368 --- [Minor_Project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-10-01T22:35:54.965+05:30  INFO 56368 --- [Minor_Project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-01T22:35:55.387+05:30  INFO 56368 --- [Minor_Project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-01T22:35:55.423+05:30  INFO 56368 --- [Minor_Project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-01T22:35:55.863+05:30  INFO 56368 --- [Minor_Project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a122e68
+2024-10-01T22:35:55.865+05:30  INFO 56368 --- [Minor_Project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-01T22:35:56.992+05:30  INFO 56368 --- [Minor_Project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-01T22:35:57.125+05:30  INFO 56368 --- [Minor_Project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-01T22:35:57.619+05:30  INFO 56368 --- [Minor_Project] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-01T22:35:58.019+05:30  WARN 56368 --- [Minor_Project] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-01T22:35:58.834+05:30  INFO 56368 --- [Minor_Project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-10-01T22:35:58.855+05:30  INFO 56368 --- [Minor_Project] [main] c.e.M.MinorProjectApplication            : Started MinorProjectApplication in 7.937 seconds (process running for 8.617)
+2024-10-01T23:50:03.857+05:30  INFO 56368 --- [Minor_Project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-01T23:50:03.869+05:30  INFO 56368 --- [Minor_Project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-01T23:50:03.875+05:30  INFO 56368 --- [Minor_Project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
