@@ -19,7 +19,7 @@ import java.util.List;
 @ToString
 @Builder
 @Entity
-@FieldDefaults(level = AccessLevel.PRIVATE)  // as we know that in a POJO table all parameters will be private,if we dont want to mention everytime ,we can add this line and it makes all non static fileds as private
+@FieldDefaults(level = AccessLevel.PRIVATE)  // as we know that in a POJO table all parameters will be private,if we dont want to mention everytime ,we can add this line and it makes all non static fields as private
 
 public class User {
 

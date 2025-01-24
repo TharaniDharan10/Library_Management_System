@@ -6,6 +6,7 @@ import com.example.Minor_Project.enums.BookType;
 import com.example.Minor_Project.model.Book;
 import com.example.Minor_Project.repository.BookRepository;
 import com.example.Minor_Project.service.BookService;
+import jakarta.persistence.EntityManager;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +28,7 @@ public class BookController {
     BookService bookService;
 
     @PostMapping
-    public ResponseEntity<Book> addBook(@RequestBody  @Valid AddBookRequest bookRequest){    //actually we shouldnot be doing this as sending book's response entity will also send its book id to frontend/client.Since we have made @Valid,for whatever field it is applied for AddBookRequest,if even one field in not given an input or missed out in postman,then it throws 400 error code
+    public ResponseEntity<Book> addBook(@RequestBody  @Valid AddBookRequest bookRequest){    //actually we shouldnot be doing this as sending book's response entity will also send its book id to frontend/client.Since we have made @Valid,for whatever field it is applied for AddBookRequest,if even one field is not given an input or missed out in postman,then it throws 400 error code
 //        AddBookRequest bookRequest1 = AddBookRequest.builder().bookNo("123").build();//this is where builder is used
 //        if(StringUtils.isEmpty(bookRequest.getBookNo())){
 //            //throw some exception      //in organisation,this is not recommanded as there are 6 to 7 fields in AddBookRequest and we have to write for all.so they add a dependency called validation and we annotate fields in AddBookRequest with @positive @NotBlank and @NotNull for enumerations as enums produce instance of their values

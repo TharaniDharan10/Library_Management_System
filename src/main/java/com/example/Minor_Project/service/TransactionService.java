@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import java.util.LinkedList;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
@@ -56,7 +57,7 @@ public class TransactionService {
         Transaction transaction = Transaction.builder()
                 .book(book)
                 .user(user)
-                .transactionId(UUID.randomUUID().toString().substring(0,30))
+                .transactionId(UUID.randomUUID().toString().substring(0,30)) //we did substring here from 0 to 30 as our TransactionId is set to length 30
                 .settlementAmount(-book.getSecurityAmount())
                 .transactionStatus(TransactionStatus.ISSUED)
                 .build();
@@ -112,11 +113,12 @@ public class TransactionService {
 
     @Transactional
     protected Integer returnBook(Transaction transaction , Book book) {
-        long issuedDateInTime = transaction.getCreatedOn().getTime(); //getCreatedOn() is of type Date
+        long issuedDateInTime = transaction.getCreatedOn().getTime(); //getCreatedOn() is of type Date .SO getTime will get it in millisec
         long currentTime = System.currentTimeMillis();
         long timeDifference = currentTime - issuedDateInTime; //in millisec
 
         long days = TimeUnit.MICROSECONDS.toDays(timeDifference);  //in days
+
 
         int amount = 0;
         if (days > validDays) {
@@ -153,3 +155,4 @@ public class TransactionService {
 
 
 }
+

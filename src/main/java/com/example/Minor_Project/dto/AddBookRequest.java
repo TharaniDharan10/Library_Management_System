@@ -19,7 +19,7 @@ import java.util.Map;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class AddBookRequest {
 
-//inorder is run these validations,we have to add @Valid in BookController
+//inorder to run these validations,we have to add @Valid in BookController
     @NotBlank(message = "Book title shouldnot be blank")
     String bookTitle;
 

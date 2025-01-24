@@ -28,7 +28,9 @@ public class CustomBookRepositoryImpl implements CustomBookRepository{  //when w
 
         //I want to make a query select * from book where booktitle like "%Java%" or booktype = "ENGLISH"
         //So we have 3 things(operand[booktitle,booktype] , operator[or,like,between,<,>,=] , value[%Java%,ENGLISH])
-        List<Predicate> predicates  = new ArrayList<>();
+        List<Predicate> predicates  = new ArrayList<>();    //in JPA terminology,these filter are known as Predicate
+
+        //for each filter i need one predicate
         if(bookTitle != null && !bookTitle.isEmpty()){
             Predicate titlePredicate = criteriaBuilder.like(bookRoot.get("bookTitle") , "%" + bookTitle + "%");
             predicates.add(titlePredicate);

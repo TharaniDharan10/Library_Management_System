@@ -12,9 +12,9 @@ import lombok.experimental.FieldDefaults;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class TransactionRequest {
 
-    @NotBlank(message = "Book no is mandatoy")
+    @NotBlank(message = "Book no is mandatory")
     String bookNo;
 
-    @NotBlank(message = "User Email is mandatoy")
+    @NotBlank(message = "User Email is mandatory")
     String userEmail;
 }

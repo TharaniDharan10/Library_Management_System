@@ -34,9 +34,9 @@ public class Book {
 
 
 
-    int securityAmount; //all books do not have equal importance,so the collected amount is different.In case if collected amount is same,then we can add this field in application,properties
+    int securityAmount; //all books do not have equal importance,so the collected amount is different.In case if collected amount is same,then we can add this field in application.properties
 
-    @Enumerated(value = EnumType.STRING)
+    @Enumerated(value = EnumType.STRING)//EnumType has 2 types: ordinal,string.If i want values in form of numbers,use ordinal,if i want my enum name to be same,use string
     BookType bookType;
 
     @ManyToOne //many book to one author.This creates One Foreign key btn Book and Author

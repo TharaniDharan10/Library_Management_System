@@ -23,7 +23,7 @@ public class TransactionController {
 //        Transaction  createdTransaction = null;
 //
 //        //Method 1 to handle exception thrown to frontend
-//        try{//we put this in try catch bcoz when we look to issue a book which is already issued,it throws 500 Internal Server error and in frontend to show what is the issue we do this.
+//        try{  //we put this in try catch bcoz when we look to issue a book which is already issued,it throws 500 Internal Server error and in frontend to show what is the issue we do this.
 //            createdTransaction = transactionService.issueBook(request);
 //        }catch(TransactionException transactionException){
 //            return new ResponseEntity<>(transactionException.getMessage(),HttpStatus.BAD_REQUEST);
