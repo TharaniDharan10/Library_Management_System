@@ -41,5 +41,18 @@ public class CustomAspect {
         return response;
     }
 
+    @Around("@annotation(com.example.Minor_Project.annotations.LogAnnotation)")
+    public Object emitLogUsingAnnotation(ProceedingJoinPoint  proceedingJoinPoint) throws Throwable {
+        log.info("I am around annotation in emit logs before : "+proceedingJoinPoint.getSignature()); //this is before logic
+        Object response = proceedingJoinPoint.proceed();    //we use Object as we dont know what s been returned by the method    // After above line,this line is processed.
+        // From here it goes back to its pointcut.executes its function,and after completing all methods in it,
+        // the flow comes back here and executes the next lines
+
+//        List<Book> res= (java.util.List<Book>)response;
+        log.info("Response : {}",response);
+        log.info("I am around annotation in emit logs after : "+proceedingJoinPoint.getSignature());  //this is after logic
+        return response;
+    }
+
 
 }

@@ -31,4 +31,8 @@ public class UserService {
 //        User user = UserMapper.mapToUser(addUserRequest);
 //        user.setUserType(UserType.ADMIN);
 //    }
+
+    public void abc(){
+
+    }
 }

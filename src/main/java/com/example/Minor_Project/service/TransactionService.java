@@ -10,6 +10,8 @@ import com.example.Minor_Project.model.Transaction;
 import com.example.Minor_Project.model.User;
 import com.example.Minor_Project.repository.TransactionRepository;
 import jakarta.transaction.Transactional;
+import lombok.AccessLevel;
+import lombok.experimental.FieldDefaults;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -19,6 +21,7 @@ import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
 @Service
+@FieldDefaults(level = AccessLevel.PRIVATE)
 public class TransactionService {
 
     @Autowired
@@ -35,6 +38,12 @@ public class TransactionService {
 
     @Value("${book.fine.per.day}")
     int finePerDay;
+
+    //as this class is annotated with FieldDefaults,so any property inside this class is private now,so inorder to access any property from outside class area especially for unit test,dont use methods like this.
+    //Instead in Test ,use ReflectionTestUtils.setField(class_object , parameter , value)
+    public void setValidDays(int days){
+        validDays = days;
+    }
 
     public Transaction issueBook(TransactionRequest request) {
 
@@ -67,7 +76,7 @@ public class TransactionService {
         bookService.updateBookMetaData(book);
         return transaction;
     }
-    private User fetchUser(TransactionRequest request){
+    public User fetchUser(TransactionRequest request){
         User user = userService.fetchUserByEmail(request.getUserEmail());
 
         if(user == null){
@@ -113,11 +122,22 @@ public class TransactionService {
 
     @Transactional
     protected Integer returnBook(Transaction transaction , Book book) {
+
+
+        int amount = calculateFine(transaction);
+        transactionRepository.save(transaction);
+        book.setUser(null);
+        bookService.updateBookMetaData(book);
+        return amount;
+
+    }
+
+    public int calculateFine(Transaction transaction ){
         long issuedDateInTime = transaction.getCreatedOn().getTime(); //getCreatedOn() is of type Date .SO getTime will get it in millisec
         long currentTime = System.currentTimeMillis();
         long timeDifference = currentTime - issuedDateInTime; //in millisec
 
-        long days = TimeUnit.MICROSECONDS.toDays(timeDifference);  //in days
+        long days = TimeUnit.MILLISECONDS.toDays(timeDifference);  //in days
 
 
         int amount = 0;
@@ -145,12 +165,7 @@ public class TransactionService {
             amount = transaction.getSettlementAmount();
             transaction.setSettlementAmount(0);
         }
-
-        transactionRepository.save(transaction);
-        book.setUser(null);
-        bookService.updateBookMetaData(book);
         return amount;
-
     }
 
 

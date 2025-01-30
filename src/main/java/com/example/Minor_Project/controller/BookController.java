@@ -1,6 +1,7 @@
 package com.example.Minor_Project.controller;
 
 
+import com.example.Minor_Project.annotations.LogAnnotation;
 import com.example.Minor_Project.dto.AddBookRequest;
 import com.example.Minor_Project.enums.BookType;
 import com.example.Minor_Project.model.Book;
@@ -38,6 +39,7 @@ public class BookController {
     }
 
     @GetMapping("/all") //criteria query is created when we want to filter search for various types //whenever we are creating our own queries,we have to directly interact with EntityManager,we cannot directly use the JpaRepository,so we need to autowire this in some class,so we created CustomBookRepository and its implementing class CustomBookRepositoryImpl which is extended by BookRepository
+    @LogAnnotation  //custom annotation
     public ResponseEntity<List<Book>> getBooks(@RequestParam(value = "title" , required = false) String bookTitle , @RequestParam(value = "type" , required = false) BookType bookType){
 
         log.info("In bookController and in getBooks method");

@@ -15,7 +15,7 @@ import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString
+@ToString(exclude = {"user","author","transactions"})
 @Data
 @Builder
 @Entity
