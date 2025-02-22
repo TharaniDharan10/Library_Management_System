@@ -10,6 +10,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.SourceType;
 import org.hibernate.annotations.UpdateTimestamp;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
@@ -21,7 +22,7 @@ import java.util.List;
 @Entity
 @FieldDefaults(level = AccessLevel.PRIVATE)  // as we know that in a POJO table all parameters will be private,if we dont want to mention everytime ,we can add this line and it makes all non static fields as private
 
-public class User {
+public class User implements Serializable { //we implement Serialisable with all model classes bcoz,if we want to store the objects of these model classes into redis(cache),which is running altogether on different server,that class should be implementing it
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

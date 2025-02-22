@@ -12,6 +12,8 @@ import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
+
+//here in criteria query,we have to rely on hibernate to convert criteria queries into native queries
 @Repository
 public class CustomBookRepositoryImpl implements CustomBookRepository{  //when we make a class with an interface name followed by Impl,it automatically gives implementation for that interface
 

@@ -9,6 +9,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.SourceType;
 import org.hibernate.annotations.UpdateTimestamp;
 
+import java.io.Serializable;
 import java.util.Date;
 
 @AllArgsConstructor
@@ -18,7 +19,7 @@ import java.util.Date;
 @Builder
 @Entity
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class Transaction {
+public class Transaction implements Serializable {   //we implement Serialisable with all model classes bcoz,if we want to store the objects of these model classes into redis(cache),which is running altogether on different server,that class should be implementing it
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
