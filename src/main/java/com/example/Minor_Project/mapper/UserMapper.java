@@ -14,6 +14,7 @@ public class UserMapper {
                 .name(UserRequest.getUserName())
                 .email(UserRequest.getEmail())
                 .address(UserRequest.getAddress())
+                .password(UserRequest.getPassword())    //added after learning Spring Security
                 .userStatus(UserStatus.ACTIVE)
                 .build();
     }

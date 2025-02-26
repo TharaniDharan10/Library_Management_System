@@ -20,4 +20,9 @@ public class AddUserRequest {
 
     String address;
 
+    @NotBlank(message = "User password shouldnot be blank")
+    String password;
+
+    //i didnot add authorities here as authorities should be chosen at backend and not by us
+
 }
