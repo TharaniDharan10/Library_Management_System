@@ -13,4 +13,5 @@ public interface TransactionRepository extends JpaRepository<Transaction,Integer
     Transaction findByUserEmailAndBookBookNo(String email,String bookNo);   //this is findBy(object of user object with u in capital letter and its properties object with first letter capital) And (object of book with b in capital letter and its properties object with first letter capital)
 
     Transaction findByUserAndBook(User user , Book book);
+
 }

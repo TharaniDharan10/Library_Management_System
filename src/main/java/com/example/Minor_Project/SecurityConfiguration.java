@@ -24,6 +24,7 @@ public class SecurityConfiguration {
         http.authorizeHttpRequests(authorize->authorize
                         .requestMatchers("/transaction/issue").hasAuthority("STUDENT")  //we can also put like "/transaction/issue/**" which means a path followed by any
                         .requestMatchers("/transaction/return").hasAuthority("ADMIN")    //these means all these apis can be accessed only by allowed authorities
+                        .requestMatchers("/book").hasAuthority("ADMIN")
                         .anyRequest().permitAll()) //we literally permitted all other methods as permitAll.We didnot bother about POSTAPI authentications also,bcoz we need CSRF token,else it wont open that POST itself
 //                        .anyRequest().authenticated()) //allows only authenticated users
                 .formLogin(withDefaults())  //this ensures that it can be opened in browser itself

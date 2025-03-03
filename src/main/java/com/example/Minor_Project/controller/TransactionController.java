@@ -4,11 +4,14 @@ package com.example.Minor_Project.controller;
 import com.example.Minor_Project.dto.TransactionRequest;
 import com.example.Minor_Project.exceptions.TransactionException;
 import com.example.Minor_Project.model.Transaction;
+import com.example.Minor_Project.model.User;
 import com.example.Minor_Project.service.TransactionService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -30,6 +33,13 @@ public class TransactionController {
 //        }
 //        return new ResponseEntity<>(createdTransaction, HttpStatus.OK);
 
+        //fetch user details from SecurityContext
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        User user = (User) authentication.getPrincipal();
+
+        if(!user.getEmail().equals(request.getUserEmail())){
+            throw new TransactionException("You cannot issue book to some other user");
+        }
 
         Transaction  createdTransaction =  transactionService.issueBook(request);
         return new ResponseEntity<>(createdTransaction, HttpStatus.OK);

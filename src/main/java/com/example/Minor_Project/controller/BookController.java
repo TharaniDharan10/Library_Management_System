@@ -34,6 +34,8 @@ public class BookController {
 //        if(StringUtils.isEmpty(bookRequest.getBookNo())){
 //            //throw some exception      //in organisation,this is not recommanded as there are 6 to 7 fields in AddBookRequest and we have to write for all.so they add a dependency called validation and we annotate fields in AddBookRequest with @positive @NotBlank and @NotNull for enumerations as enums produce instance of their values
 //        }
+
+
         Book savedBook = bookService.addBook(bookRequest);
         return new ResponseEntity<>(savedBook, HttpStatus.CREATED);
     }
